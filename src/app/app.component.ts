@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public title: string = 'Mi primera app de Angular 18 😊';
-  public isAccordionOpen: boolean = false;
 
+  public isAccordionOpen: boolean = false;
   public isAccordionOpenHero: boolean = false;
   public isAccordionOpenDbz: boolean = false;
 
