@@ -9,14 +9,14 @@ export class AppComponent {
   public title: string = 'Mi primera app de Angular 18 😊';
   public isAccordionOpen: boolean = false;
 
-  public isAccordionOpenOne: boolean = false;
-  public isAccordionOpenTwo: boolean = false;
+  public isAccordionOpenHero: boolean = false;
+  public isAccordionOpenDbz: boolean = false;
 
-  handleAccordionOpenOne(): void {
-    this.isAccordionOpenOne = !this.isAccordionOpenOne;
+  handleAccordionOpenHero(): void {
+    this.isAccordionOpenHero = !this.isAccordionOpenHero;
   }
 
-  handleAccordionOpenTwo(): void {
-    this.isAccordionOpenTwo = !this.isAccordionOpenTwo;
+  handleAccordionOpenDBZ(): void {
+    this.isAccordionOpenDbz = !this.isAccordionOpenDbz;
   }
 }

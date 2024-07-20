@@ -1,6 +1,4 @@
-<app-dbz-main-page />
-
-<!-- <h1>{{ title }}</h1>
+<h1>{{ title }}</h1>
 
 <hr />
 
@@ -17,9 +15,9 @@
       data-bs-target="#collapseOne"
       aria-expanded="true"
       aria-controls="collapseOne"
-      (click)="handleAccordionOpenOne()"
+      (click)="handleAccordionOpenHero()"
     >
-      HERO COMPONENT
+      HERO COMPONENTS
     </button>
   </h2>
   <div
@@ -28,8 +26,10 @@
     aria-labelledby="headingOne"
     data-bs-parent="#accordionExample"
   >
-    <div class="accordion-body" *ngIf="isAccordionOpenOne === true">
+    <div class="accordion-body" *ngIf="isAccordionOpenHero === true">
       <app-heroes-hero />
+
+      <app-heroes-list />
     </div>
   </div>
 </div>
@@ -45,9 +45,9 @@
       data-bs-target="#collapseOne"
       aria-expanded="true"
       aria-controls="collapseOne"
-      (click)="handleAccordionOpenTwo()"
+      (click)="handleAccordionOpenDBZ()"
     >
-      HERO-LIST COMPONENT
+      DBZ PAGE + COMPONENT
     </button>
   </h2>
   <div
@@ -56,8 +56,8 @@
     aria-labelledby="headingOne"
     data-bs-parent="#accordionExample"
   >
-    <div class="accordion-body" *ngIf="isAccordionOpenTwo === true">
-      <app-heroes-list />
+    <div class="accordion-body" *ngIf="isAccordionOpenDbz === true">
+      <app-dbz-main-page />
     </div>
   </div>
-</div> -->
+</div>
