@@ -1,0 +1,27 @@
+<h4>AGREGAR PERSONAJE</h4>
+
+<!-- ? NO usar el Click, es mejor usar el ngSubmit, para evitar recarga de la pagina -->
+<form class="row" (ngSubmit)="emitCharacter()">
+  <!-- ! A este tipo de simbolos [()], lo llama caja de bananas -->
+  <!-- ! Para poder usar el ngModel se tiene que importar -->
+  <input
+    type="text"
+    name="name"
+    [(ngModel)]="character.name"
+    class="form-control mb-2"
+    placeholder="Nombre"
+  />
+
+  <input
+    type="number"
+    name="power"
+    [(ngModel)]="character.power"
+    class="form-control mb-2"
+    placeholder="Poder"
+  />
+
+  <button type="submit" class="btn btn-primary">AGREGAR</button>
+
+  <!-- ! Mostrar los datos en un JSON -->
+  {{ character | json }}
+</form>

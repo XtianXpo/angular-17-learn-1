@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 // * Imports de los Modulos
 import { AppRoutingModule } from './app-routing.module';
 import { CounterModule } from './counter/counter.module';
+import { DbzModule } from './dbz/dbz.module';
 import { HeroesModule } from './heroes/heroes.module';
 
 // * Imports de los Componentes
@@ -14,7 +15,13 @@ import { AppComponent } from './app.component';
 // ? (Donde importaremos los "Paquetes" de declarations) para evitar tener muchas DECLARATIONS
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, CounterModule, HeroesModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    CounterModule,
+    HeroesModule,
+    DbzModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

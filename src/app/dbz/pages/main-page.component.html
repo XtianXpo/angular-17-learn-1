@@ -1,0 +1,20 @@
+<h1>DBZ PERSONAJES</h1>
+
+<hr />
+
+<div class="row">
+  <div class="col">
+    <!-- * Cuando es de tipo [] es una prop / atributos / usar @Input -->
+    <dbz-list
+      [characterList]="characters"
+      (onDeleteId)="onDeleteCharacter($event)"
+    ></dbz-list>
+  </div>
+
+  <div class="col">
+    <!-- * Cuando es de tipo () es utilizado como tipo Event // (click) | @Output -->
+    <dbz-add-character
+      (onNewCharacter)="onNewCharacter($event)"
+    ></dbz-add-character>
+  </div>
+</div>
